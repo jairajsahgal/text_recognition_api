@@ -1,0 +1,16 @@
+Serializer validation:-> False
+<QueryDict: {'email': ['krishnaraj@gmail.com'], 'password': ['Something@12']}>
+<QueryDict: {'email': ['krishnaraj@gmail.com'], 'password': ['Something@12']}>
+<QueryDict: {'email': ['krishnaraj@gmail.com'], 'password': ['Something@12']}>
+<QueryDict: {'email': ['krishnaraj@gmail.com'], 'password': ['Something@12']}>
+<QueryDict: {'email': ['krishnaraj@gmail.com'], 'password': ['Something@12']}>
+<QueryDict: {'email': ['krishnaraj@gmail.com'], 'password': ['Something@12']}>
+<QueryDict: {'email': ['krishnaraj@gmail.com'], 'password': ['Something@12']}>
+<QueryDict: {'email': ['krishnaraj@gmail.com'], 'password': ['Something@12']}>
+{'email': 'krishnaraj@gmail.com', 'password': 'Something@12'}
+<QueryDict: {'email': ['krishnaraj@gmail.com'], 'password': ['Something@12']}>
+{'email': 'krishnaraj@gmail.com', 'password': 'Something@12'}
+<QueryDict: {'email': ['krishnaraj@gmail.com'], 'password': ['Something@12']}>
+{'email': 'krishnaraj@gmail.com', 'password': 'Something@12'}
+<QueryDict: {'email': ['krishnaraj@gmail.com']}>
+{'image': None}
