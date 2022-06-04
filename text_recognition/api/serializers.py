@@ -2,6 +2,9 @@ from rest_framework import serializers
 from .models import Account, User, Picture
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth import authenticate
+import numpy as np
+import logging
+logger = logging.getLogger('info')
 
 class AccountSerializer(serializers.ModelSerializer):
     password = serializers.CharField(max_length=100,error_messages={"required":"Password not given!"})
@@ -15,6 +18,7 @@ class FileSerializer(serializers.ModelSerializer):
     class Meta:
         model = Picture
         fields = ['image']
+
 
 class LoginSerializer(serializers.Serializer):
     email = serializers.CharField(
@@ -48,4 +52,9 @@ class LoginSerializer(serializers.Serializer):
         
         attrs['user']=user
         return attrs
-        
+
+
+class PictureShowSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Picture
+        fields = ['image']

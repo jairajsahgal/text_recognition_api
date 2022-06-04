@@ -913,3 +913,646 @@ Unauthorized: /account/upload_image/
 Not Found: /favicon.ico
 Unauthorized: /account/upload_image/
 Unauthorized: /account/upload_image/
+Unauthorized: /account/picture-list/
+Unauthorized: /account/upload_image/
+Unauthorized: /account/upload_image/
+Internal Server Error: /account/upload_image/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/views.py", line 123, in uploadImage
+    "image": pictureObject.image.url,
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 65, in url
+    self._require_file()
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 40, in _require_file
+    raise ValueError(
+ValueError: The 'image' attribute has no file associated with it.
+Internal Server Error: /account/upload_image/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/views.py", line 125, in uploadImage
+    "image": pictureObject.image.url,
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 65, in url
+    self._require_file()
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 40, in _require_file
+    raise ValueError(
+ValueError: The 'image' attribute has no file associated with it.
+Internal Server Error: /account/upload_image/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/views.py", line 125, in uploadImage
+    "image": pictureObject.image.url,
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 65, in url
+    self._require_file()
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 40, in _require_file
+    raise ValueError(
+ValueError: The 'image' attribute has no file associated with it.
+Internal Server Error: /account/upload_image/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/views.py", line 126, in uploadImage
+    "image": pictureObject.image.url,
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 65, in url
+    self._require_file()
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 40, in _require_file
+    raise ValueError(
+ValueError: The 'image' attribute has no file associated with it.
+Internal Server Error: /account/upload_image/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/views.py", line 127, in uploadImage
+    "image": pictureObject.image.url,
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 65, in url
+    self._require_file()
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 40, in _require_file
+    raise ValueError(
+ValueError: The 'image' attribute has no file associated with it.
+Internal Server Error: /account/upload_image/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/views.py", line 108, in uploadImage
+    if serializer.is_valid():
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/serializers.py", line 429, in run_validation
+    value = self.validate(value)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/serializers.py", line 24, in validate
+    logger.info(self.context.get('request').user.username)
+AttributeError: 'NoneType' object has no attribute 'user'
+Internal Server Error: /account/picture-ocr/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/views.py", line 172, in get_text_from_image
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.5.3) /Users/runner/miniforge3/conda-bld/libopencv_1633800949369/work/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+Internal Server Error: /account/picture-ocr/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/views.py", line 169, in get_text_from_image
+    img = cv2.imread(pictureObject.image)
+TypeError: Can't convert object of type 'ImageFieldFile' to 'str' for 'filename'
+Internal Server Error: /account/picture-ocr/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/views.py", line 172, in get_text_from_image
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.5.3) /Users/runner/miniforge3/conda-bld/libopencv_1633800949369/work/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+Internal Server Error: /account/picture-ocr/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/views.py", line 171, in get_text_from_image
+    logger.info(img.shape)
+AttributeError: 'NoneType' object has no attribute 'shape'
+Internal Server Error: /account/picture-ocr/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/views.py", line 174, in get_text_from_image
+    img_path = os.join(value,img_path)
+AttributeError: module 'os' has no attribute 'join'
+Internal Server Error: /account/picture-ocr/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/views.py", line 176, in get_text_from_image
+    logger.info(img.shape)
+AttributeError: 'NoneType' object has no attribute 'shape'
+Internal Server Error: /account/picture-ocr/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/views.py", line 180, in get_text_from_image
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.5.3) /Users/runner/miniforge3/conda-bld/libopencv_1633800949369/work/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+Internal Server Error: /account/picture-ocr/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/views.py", line 177, in get_text_from_image
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.5.3) /Users/runner/miniforge3/conda-bld/libopencv_1633800949369/work/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+Internal Server Error: /account/picture-ocr/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/views.py", line 177, in get_text_from_image
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.5.3) /Users/runner/miniforge3/conda-bld/libopencv_1633800949369/work/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+Internal Server Error: /account/picture-ocr/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/views.py", line 178, in get_text_from_image
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.5.3) /Users/runner/miniforge3/conda-bld/libopencv_1633800949369/work/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+Internal Server Error: /account/picture-ocr/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/views.py", line 178, in get_text_from_image
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.5.3) /Users/runner/miniforge3/conda-bld/libopencv_1633800949369/work/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+Internal Server Error: /account/picture-ocr/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/views.py", line 179, in get_text_from_image
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.5.3) /Users/runner/miniforge3/conda-bld/libopencv_1633800949369/work/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+Internal Server Error: /account/picture-ocr/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/views.py", line 179, in get_text_from_image
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.5.3) /Users/runner/miniforge3/conda-bld/libopencv_1633800949369/work/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+Internal Server Error: /account/picture-ocr/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/views.py", line 180, in get_text_from_image
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.5.3) /Users/runner/miniforge3/conda-bld/libopencv_1633800949369/work/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+Internal Server Error: /account/picture-ocr/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/views.py", line 180, in get_text_from_image
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.5.3) /Users/runner/miniforge3/conda-bld/libopencv_1633800949369/work/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+Internal Server Error: /account/picture-ocr/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/views.py", line 177, in get_text_from_image
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.5.3) /Users/runner/miniforge3/conda-bld/libopencv_1633800949369/work/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+Internal Server Error: /account/picture-ocr/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/views.py", line 173, in get_text_from_image
+    logger.info(type(Image.open(pictureObject.image)))
+NameError: name 'Image' is not defined
+Internal Server Error: /account/picture-ocr/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/views.py", line 177, in get_text_from_image
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.5.3) /Users/runner/miniforge3/conda-bld/libopencv_1633800949369/work/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+Internal Server Error: /account/picture-ocr/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/views.py", line 178, in get_text_from_image
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.5.3) /Users/runner/miniforge3/conda-bld/libopencv_1633800949369/work/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+Internal Server Error: /account/picture-ocr/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/api/views.py", line 174, in get_text_from_image
+    img = Image.open('Image.jpg').convert('RGB')
+  File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/PIL/Image.py", line 3068, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'Image.jpg'

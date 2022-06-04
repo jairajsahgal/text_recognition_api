@@ -14,3 +14,66 @@ Serializer validation:-> False
 {'email': 'krishnaraj@gmail.com', 'password': 'Something@12'}
 <QueryDict: {'email': ['krishnaraj@gmail.com']}>
 {'image': None}
+<QueryDict: {'image': ['']}>
+Request->
+<QueryDict: {'image': ['']}>
+Request->
+<QueryDict: {'image': ['']}>
+Request->
+<QueryDict: {'image': [<InMemoryUploadedFile: Basware Cover Letter.pages (application/vnd.apple.pages)>]}>
+Request->
+<QueryDict: {'image': [<InMemoryUploadedFile: Screenshot 2022-04-04 at 5.23.23 AM.png (image/png)>]}>
+Request->
+<QueryDict: {'image': [<InMemoryUploadedFile: Screenshot 2022-04-04 at 5.23.23 AM.png (image/png)>]}>
+Request->
+<QueryDict: {'image': [<InMemoryUploadedFile: Screenshot 2022-04-04 at 5.23.23 AM.png (image/png)>]}>
+Request->
+<QueryDict: {'image': [<InMemoryUploadedFile: Screenshot 2022-04-04 at 5.23.23 AM.png (image/png)>]}>
+Request->
+<QueryDict: {'image': [<InMemoryUploadedFile: Screenshot 2022-04-04 at 5.23.23 AM.png (image/png)>]}>
+Request->
+<QueryDict: {'image': [<InMemoryUploadedFile: Screenshot 2022-04-04 at 5.23.23 AM.png (image/png)>]}>
+Request->
+<QueryDict: {'image': [<InMemoryUploadedFile: Screenshot 2022-04-04 at 5.23.23 AM.png (image/png)>]}>
+None
+Request->
+<QueryDict: {'image': [<InMemoryUploadedFile: Screenshot 2022-04-04 at 5.23.23 AM.png (image/png)>]}>
+None
+Request->
+<QueryDict: {'image': [<InMemoryUploadedFile: Screenshot 2022-04-04 at 5.23.23 AM.png (image/png)>]}>
+context
+{}
+/media/images/testocr_MTOPDEg.png
+/media/images/testocr_9ILspxP.png
+/media/images/testocr_OO2uDGV.png
+/media/images/testocr_nLeuAG1.png
+image path: 
+/media/images/testocr_nLeuAG1.png
+None
+http://127.0.0.1:8000/media/images/testocr_59C8vwQ.png
+/media/images/testocr_ZMoIt1d.png
+Image path /media/images/testocr_p3vmszB.png
+Image path /media/images/testocr_aIvdvXV.png
+project path /Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/text_recognition
+Image path /media/images/testocr_uPhBu6d.png
+project path /Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/text_recognition
+Image path /media/images/testocr_UfsT7sp.png
+project path /Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/text_recognition
+/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/text_recognition/media/images/testocr_UfsT7sp.png
+Image path /media/images/testocr.png
+project path /Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/text_recognition
+/Users/jairajsahgal/Documents/django/text_recognition_api/text_recognition/text_recognition/media/images/testocr.png
+<class 'django.db.models.fields.files.ImageFieldFile'>
+<class 'PIL.PngImagePlugin.PngImageFile'>
+<class 'PIL.PngImagePlugin.PngImageFile'>
+PNG
+This is a lot of 12 point text to test the
+ocr code and see if it works on all types
+of file format.
+
+The quick brown dog jumped over the
+lazy fox. The quick brown dog jumped
+over the lazy fox. The quick brown dog
+jumped over the lazy fox. The quick
+brown dog jumped over the lazy fox.
+

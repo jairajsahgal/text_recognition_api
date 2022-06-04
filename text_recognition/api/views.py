@@ -1,13 +1,12 @@
 
-from ast import Is
-import email
-from os import stat
-from django.shortcuts import render
+
+import numpy as np
+
 from .models import Account, User, Picture
 from rest_framework.decorators import api_view, parser_classes
 from rest_framework.response import Response
 from django.contrib.auth import authenticate
-from .serializers import AccountSerializer, FileSerializer, LoginSerializer
+from .serializers import AccountSerializer, FileSerializer, LoginSerializer, PictureShowSerializer
 from rest_framework import status
 from .utils import check_password
 from rest_framework.parsers import MultiPartParser, FormParser
@@ -17,6 +16,12 @@ from rest_framework.authtoken.serializers import AuthTokenSerializer
 from knox.models import AuthToken
 from base64 import b64encode
 import logging
+import cv2
+import pytesseract
+import base64
+import os
+from django.conf import settings
+from PIL import Image
 logger = logging.getLogger('info')
 # Create your views here.
 
@@ -106,6 +111,8 @@ def uploadImage(request):
         accountObject = Account.objects.get(username=request.user.username)
         try:
             file = request.data["image"]
+            if bool(file) == False:
+                raise KeyError
         except KeyError:
             data = {
                 "status": status.HTTP_400_BAD_REQUEST,
@@ -129,3 +136,57 @@ def uploadImage(request):
             "message": serializer.errors,
         }
         return Response(data)
+
+
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def displayImages(request):
+    account = Account.objects.get(username=request.user.username)
+    pictureObjects = account.picture_set.all()
+    serializer = PictureShowSerializer(instance=pictureObjects,many=True)
+    return Response(serializer.data)
+
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+@parser_classes([MultiPartParser,FormParser])
+def get_text_from_image(request):
+    # Read image with opencv
+    serializer = FileSerializer(data=request.data)
+    if serializer.is_valid():
+        accountObject = Account.objects.get(username=request.user.username)
+        try:
+            file = request.data["image"]
+            if bool(file) == False:
+                raise KeyError
+        except KeyError:
+            data = {
+                "status": status.HTTP_400_BAD_REQUEST,
+                "message": "Image not uploaded",
+            }
+            return Response(data)
+        pictureObject = Picture.objects.create(account=accountObject,image=file)
+        pictureObject.save()
+    # img_path = request.build_absolute_uri(pictureObject.image.url)
+    
+    img = Image.open(pictureObject.image).convert('RGB')
+    open_cv_image = np.array(img)
+    img = open_cv_image[:, :, ::-1]
+    "media/images/testocr.png"
+    # Convert to gray
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+    # Apply dilation and erosion to remove some noise
+    kernel = np.ones((1, 1), np.uint8)
+    img = cv2.dilate(img, kernel, iterations=1)
+    img = cv2.erode(img, kernel, iterations=1)
+    result = pytesseract.image_to_string(image=img)
+    logger.info(result)
+    data = {
+        "status": status.HTTP_200_OK,
+        "message": "Image saved! \n Found text inside image.",
+        "data": result,
+    }
+    return Response(data)

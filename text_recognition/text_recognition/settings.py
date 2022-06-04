@@ -121,6 +121,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
@@ -132,9 +133,8 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': ('knox.auth.TokenAuthentication',),
 }
 
-MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'media/')
+MEDIA_ROOT  = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
-
 LOGGING = {
     'version': 1,
     # The version number of our log
@@ -169,3 +169,4 @@ LOGGING = {
 
     },
 }
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
