@@ -171,22 +171,63 @@ def get_text_from_image(request):
         pictureObject.save()
     # img_path = request.build_absolute_uri(pictureObject.image.url)
     
-    img = Image.open(pictureObject.image).convert('RGB')
-    open_cv_image = np.array(img)
-    img = open_cv_image[:, :, ::-1]
-    "media/images/testocr.png"
-    # Convert to gray
-    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        img = Image.open(pictureObject.image).convert('RGB')
+        open_cv_image = np.array(img)
+        img = open_cv_image[:, :, ::-1]
+        "media/images/testocr.png"
+        # Convert to gray
+        img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
-    # Apply dilation and erosion to remove some noise
-    kernel = np.ones((1, 1), np.uint8)
-    img = cv2.dilate(img, kernel, iterations=1)
-    img = cv2.erode(img, kernel, iterations=1)
-    result = pytesseract.image_to_string(image=img)
-    logger.info(result)
-    data = {
-        "status": status.HTTP_200_OK,
-        "message": "Image saved! \n Found text inside image.",
-        "data": result,
-    }
-    return Response(data)
+        # Apply dilation and erosion to remove some noise
+        kernel = np.ones((1, 1), np.uint8)
+        img = cv2.dilate(img, kernel, iterations=1)
+        img = cv2.erode(img, kernel, iterations=1)
+        result = pytesseract.image_to_string(image=img)
+        logger.info(result)
+        data = {
+            "status": status.HTTP_200_OK,
+            "message": "Image saved! \n Found text inside image.",
+            "data": result,
+        }
+        return Response(data)
+    else:
+        data = {
+            "message": "Error in request!",
+            "status": status.HTTP_400_BAD_REQUEST,
+            "data": serializer.errors,
+        }
+        return Response(data)
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+@parser_classes([MultiPartParser,FormParser])
+def get_number_plate(request):
+    serializer = FileSerializer(data=request.data)
+    if serializer.is_valid():
+        accountObject = Account.objects.get(username=request.user.username)
+        try:
+            file = request.data["image"]
+            if bool(file) == False:
+                raise KeyError
+        except KeyError:
+            data = {
+                "status": status.HTTP_400_BAD_REQUEST,
+                "message": "Image not uploaded",
+            }
+            return Response(data)
+        pictureObject = Picture.objects.create(account=accountObject,image=file)
+        pictureObject.save()
+        img = Image.open(pictureObject.image).convert('RGB')
+        open_cv_image = np.array(img)
+        img = open_cv_image[:, :, ::-1]
+
+
+    else:
+        data = {
+            "message": "Error in request!",
+            "status": status.HTTP_400_BAD_REQUEST,
+            "data": serializer.errors,
+        }
+        return Response(data)
+

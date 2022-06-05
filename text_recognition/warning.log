@@ -1556,3 +1556,6 @@ Traceback (most recent call last):
   File "/Users/jairajsahgal/miniforge3/envs/cv/lib/python3.8/site-packages/PIL/Image.py", line 3068, in open
     fp = builtins.open(filename, "rb")
 FileNotFoundError: [Errno 2] No such file or directory: 'Image.jpg'
+Unauthorized: /account/picture-ocr/
+Unauthorized: /account/picture-ocr/
+Unauthorized: /account/picture-list/
