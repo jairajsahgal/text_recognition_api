@@ -1559,3 +1559,9 @@ FileNotFoundError: [Errno 2] No such file or directory: 'Image.jpg'
 Unauthorized: /account/picture-ocr/
 Unauthorized: /account/picture-ocr/
 Unauthorized: /account/picture-list/
+Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /account/picture-ocr/
+Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /account/login/
+Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /account/login/
